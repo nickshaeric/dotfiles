@@ -1,7 +1,8 @@
 # nicksha@mbookair
 
 general.import = [
-    "~/.config/alacritty/themes/catppuccin-frappe.toml"
+    # "~/.config/alacritty/themes/catppuccin-frappe.toml"
+    "~/.config/alacritty/themes/blood-moon.toml"
 ]
 
 [env]
