@@ -1,0 +1,42 @@
+# nicksha@mbookair
+
+general.import = [
+    "~/.config/alacritty/themes/catppuccin-frappe.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 3
+padding.y = 3
+
+startup_mode = "Maximized"
+
+opacity = 0.8
+
+decorations = "Buttonless"
+
+option_as_alt = "Both"
+
+[mouse]
+hide_when_typing = true
+
+[font]
+size = 18
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
