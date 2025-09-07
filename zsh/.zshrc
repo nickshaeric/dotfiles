@@ -12,7 +12,6 @@ bindkey -e
 
 # Basic auto/tab complete:
 autoload -U compinit && compinit
-autoload -U colors && colors
 zmodload zsh/complist
 
 # Prompt setup
