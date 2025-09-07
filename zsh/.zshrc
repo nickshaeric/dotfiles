@@ -1,20 +1,23 @@
 # Nicksha's .zshrc
 
+# Alias
+alias vim=nvim
+alias vi="nvim"
+
 # Load colors for prompt
 autoload -U colors && colors
 
 # Emacs-style keybindings
 bindkey -e
 
+# Basic auto/tab complete:
+autoload -U compinit && compinit
+autoload -U colors && colors
+zmodload zsh/complist
+
 # Prompt setup
 setopt PROMPT_SUBST  # allow variables to expand in PS1
 PS1="%{$fg[magenta]%}%~%{$reset_color%} \$ "
-
-# zsh-autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# zsh-syntax-highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ---- Eza (better ls) -----
 alias ls="eza --icons=always"
@@ -57,3 +60,10 @@ compinit
 
 # Bob (Neovim version manager)
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+
+# zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
