@@ -1,7 +1,14 @@
 # Nicksha's .zshrc
 
-# Starship Prompt
-eval "$(starship init zsh)"
+# Load colors for prompt
+autoload -U colors && colors
+
+# Emacs-style keybindings
+bindkey -e
+
+# Prompt setup
+setopt PROMPT_SUBST  # allow variables to expand in PS1
+PS1="%{$fg[magenta]%}%~%{$reset_color%} \$ "
 
 # zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh

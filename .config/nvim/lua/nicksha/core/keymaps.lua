@@ -37,6 +37,6 @@ map('n', '<leader>fb', ':Telescope buffers<CR>', opts)    -- List open buffers
 map('n', '<leader>fh', ':Telescope help_tags<CR>', opts)  -- Search help tags
 
 -- Buffers
-map('n', '<S-bd>', ':bdelete<CR>', opts)                  -- delete buffer
-map('n', '<S-l>', ':BufferLineCycleNext<CR>', opts)       -- Shift + L: next buffer
-map('n', '<S-h>', ':BufferLineCyclePrev<CR>', opts)       -- Shift + H: previous buffer
+map('n', '<leader>bd', ':bdelete<CR>', opts)                  -- delete buffer
+map('n', '<S-l>', ':BufferLineCycleNext<CR>', opts)           -- Shift + L: next buffer
+map('n', '<S-h>', ':BufferLineCyclePrev<CR>', opts)           -- Shift + H: previous buffer
