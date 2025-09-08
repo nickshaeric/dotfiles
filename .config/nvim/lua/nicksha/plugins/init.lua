@@ -26,7 +26,6 @@ require("lazy").setup({
     require('nicksha.plugins.harpoon'),
     require('nicksha.plugins.indent-blankline'),
     require('nicksha.plugins.mini-icons'),
-    require('nicksha.plugins.noice'),
     require('nicksha.plugins.nvim-tree'),
     require('nicksha.plugins.plenary'),
     require('nicksha.plugins.telescope-fzf-native'),
