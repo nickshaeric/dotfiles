@@ -33,8 +33,7 @@ require("lazy").setup({
     require('nicksha.plugins.tmux-navigator'),
     require('nicksha.plugins.treesitter'),
     require('nicksha.plugins.typst-preview'),
-    require('nicksha.plugins.vague'),
-    require('nicksha.plugins.vimtex')
+    require('nicksha.plugins.vague')
   },
 })
 
