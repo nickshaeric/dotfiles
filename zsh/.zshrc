@@ -3,6 +3,9 @@
 # Alias
 alias vim=nvim
 alias vi="nvim"
+alias skim="open -a Skim"
+alias zath="zathura"
+
 
 # Load colors for prompt
 autoload -U colors && colors
