@@ -28,12 +28,12 @@ require("lazy").setup({
     require('nicksha.plugins.mini-icons'),
     require('nicksha.plugins.nvim-tree'),
     require('nicksha.plugins.plenary'),
+    require('nicksha.plugins.rose-pine'),
     require('nicksha.plugins.telescope-fzf-native'),
     require('nicksha.plugins.telescope'),
     require('nicksha.plugins.tmux-navigator'),
     require('nicksha.plugins.treesitter'),
-    require('nicksha.plugins.typst-preview'),
-    require('nicksha.plugins.vague')
+    require('nicksha.plugins.typst-preview')
   },
 })
 
