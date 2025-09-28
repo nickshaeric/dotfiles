@@ -1,52 +1,47 @@
--- nicksha's Neovim options configuration
+-- nicksha's neovim options configuration
 
 local opt = vim.opt
 
 -- UI
-opt.number = true             -- Show absolute line numbers
-opt.relativenumber = true     -- Show relative line numbers
-opt.cursorline = true         -- Highlight current line
-opt.termguicolors = true      -- True color support
+opt.number = true
+opt.relativenumber = true
+opt.cursorline = true
+opt.termguicolors = true
 opt.background = 'dark'
-opt.signcolumn = 'yes'        -- Always show the sign column
-opt.wrap = false              -- Disable line wrapping
-opt.showmode = false          -- Hide "-- INSERT --" etc.
-opt.mouse = 'a'               -- Enable mouse support in all modes
-opt.laststatus = 3
+opt.showmode = false
+opt.wrap = false
+opt.guicursor = ''
+
 
 -- Editing
-opt.tabstop = 4               -- Number of spaces tabs count for
-opt.shiftwidth = 4            -- Number of spaces for autoindent
-opt.expandtab = true          -- Use spaces instead of tabs
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
 opt.autoindent = true
-opt.smartindent = true        -- Smart autoindenting
+opt.smartindent = true
 opt.smarttab = true
 
--- File handling
+-- File Handling
 opt.fileencoding = 'utf-8'
 opt.swapfile = false
 opt.backup = false
-opt.undofile = true           -- Enable persistent undo
+opt.undofile = true
 
 -- Search
 opt.ignorecase = true
 opt.smartcase = true
-opt.incsearch = true          -- Incremental search
-opt.hlsearch = false          -- Don't highlight all search matches
-
--- Split behavior
-opt.splitright = true
-opt.splitbelow = true
+opt.incsearch = true
+opt.hlsearch = false
 
 -- Clipboard
 opt.clipboard = 'unnamedplus'
 
 -- Performance
-opt.timeoutlen = 300          -- Faster mapped sequence timeout
+opt.timeoutlen = 300
 
 -- Completion
 opt.completeopt = { 'menuone', 'noselect' }
 
 -- Scrolling
-opt.scrolloff = 10            -- Minimum lines above/below cursor
+opt.scrolloff = 10
 opt.sidescrolloff = 10
