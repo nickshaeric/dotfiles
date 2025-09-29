@@ -22,5 +22,10 @@ require('lazy').setup({
     require('nicksha.plugins.treesitter'),
     require('nicksha.plugins.typst-preview'),
     require('nicksha.plugins.tmux-navigator'),
+    require('nicksha.plugins.vimtex'),
+    --LSP
+    -- require('nicksha.lsp.mason'),
+    -- Luasnip
+    require('nicksha.luasnip.luasnip'),
 })
 
