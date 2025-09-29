@@ -4,14 +4,12 @@
 alias vim=nvim
 alias vi="nvim"
 alias skim="open -a Skim"
-alias zath="zathura"
-
 
 # Load colors for prompt
 autoload -U colors && colors
 
-# Emacs-style keybindings
-bindkey -e
+# Vi-style keybindings
+bindkey -v
 
 # Basic auto/tab complete:
 autoload -U compinit && compinit
