@@ -39,15 +39,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# Yazi
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
-}
-
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/nicksha/.docker/completions $fpath)
 autoload -Uz compinit

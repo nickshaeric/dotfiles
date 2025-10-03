@@ -1,8 +1,7 @@
 # nicksha@mbookair
 
 general.import = [
-    # "~/.config/alacritty/themes/vague.toml"
-    "~/.config/alacritty/themes/rose-pine.toml"
+    "~/.config/alacritty/themes/vague.toml"
 ]
 
 [env]
