@@ -19,10 +19,6 @@ zmodload zsh/complist
 setopt PROMPT_SUBST  # allow variables to expand in PS1
 PS1="%{$fg[magenta]%}%~%{$reset_color%} \$ "
 
-# ---- Eza (better ls) -----
-alias ls="eza --icons=always"
-export EZA_CONFIG_DIR="$HOME/.config/eza"
-
 # GO Export
 export PATH=$PATH:$HOME/.local/opt/go/bin
 export PATH=$PATH:$HOME/go/bin
