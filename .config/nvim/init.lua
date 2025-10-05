@@ -37,14 +37,22 @@ vim.incsearch = true
 vim.o.hlsearch = false
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
+vim.o.guicursor = ''
 
 -- Clipboard
 vim.o.clipboard = 'unnamedplus'
 
+-- Keymaps
+
 -- Plugins
 vim.pack.add({
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
+    { src = "https://github.com/chomosuke/typst-preview.nvim" },
     { src = "https://github.com/vague2k/vague.nvim" },
 })
 
+require 'vague'.setup({ transparent = true })
+
 vim.cmd('colorscheme vague')
 vim.cmd(':hi statusline guibg=NONE')
+
