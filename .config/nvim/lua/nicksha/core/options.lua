@@ -1,4 +1,4 @@
--- nicksha's options
+-- nicksha@options
 
 local opt = vim.opt
 
@@ -7,6 +7,37 @@ opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
 opt.termguicolors = true
-opt.signcolumn = 'yes'
+opt.background = 'dark'
+opt.showmode = false
 opt.wrap = false
-opt.mouse = 'a'
+opt.guicursor = ''
+
+-- Editing
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
+opt.autoindent = true
+opt.smartindent = true
+opt.smarttab = true
+
+-- File Handling
+opt.fileencoding = 'utf-8'
+opt.swapfile = false
+opt.backup = false
+opt.undofile = true
+
+-- Search
+opt.ignorecase = true
+opt.smartcase = true
+opt.incsearch = true
+opt.hlsearch = false
+
+-- Clipboard
+opt.clipboard = 'unnamedplus'
+
+-- Completion
+opt.completeopt = { 'menuone', 'noselect' }
+
+-- Scrolling
+opt.scrolloff = 8
+opt.sidescrolloff = 8

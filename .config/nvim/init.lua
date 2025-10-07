@@ -1,10 +1,11 @@
--- nicksha's neovim configuration
+-- nicksha@nvim
 
--- Load Globals
+-- Globals
 require('nicksha.core.globals')
 
--- Load Keymaps
+-- Core Settings
 require('nicksha.core.keymaps')
-
--- Load Options
 require('nicksha.core.options')
+
+-- Plugins
+require('nicksha.plugins.init')

@@ -1,4 +1,4 @@
--- nicksha's global variable configuration
+-- nicksha@global
 
 -- Leader Key
 vim.g.mapleader = ' '
