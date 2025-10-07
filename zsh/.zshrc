@@ -13,6 +13,9 @@ autoload -U colors && colors
 # Vi-style keybindings
 bindkey -v
 
+# TMUX-Sessionizer
+bindkey -s ^f "tmux-sessionizer\n"
+
 # Basic auto/tab complete:
 autoload -U compinit && compinit
 zmodload zsh/complist
@@ -20,6 +23,10 @@ zmodload zsh/complist
 # Prompt setup
 setopt PROMPT_SUBST  # allow variables to expand in PS1
 PS1="%{$fg[magenta]%}%~%{$reset_color%} \$ "
+
+# Scripts
+export PATH="$HOME/.local/scripts:$PATH"
+
 
 # GO Export
 export PATH=$PATH:$HOME/.local/opt/go/bin
