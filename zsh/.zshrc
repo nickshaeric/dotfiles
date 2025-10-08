@@ -1,5 +1,4 @@
 # Nicksha's .zshrc
-
 # Alias
 alias vim=nvim
 alias vi="nvim"
@@ -26,7 +25,6 @@ PS1="%{$fg[magenta]%}%~%{$reset_color%} \$ "
 
 # Scripts
 export PATH="$HOME/.local/scripts:$PATH"
-
 
 # GO Export
 export PATH=$PATH:$HOME/.local/opt/go/bin
