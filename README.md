@@ -9,9 +9,13 @@ cd ~/dotfiles
 ```
 
 # Home-level configs
+```bash
 stow zsh
 stow tmux
+```
 
 # Config-level
+```bash
 stow -t ~/.config .config
+```
 
