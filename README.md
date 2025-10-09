@@ -8,13 +8,13 @@ git clone https://github.com/nickshaeric/dotfiles ~/dotfiles
 cd ~/dotfiles
 ```
 
-# Home-level configs
+## Home-level configs
 ```bash
 stow zsh
 stow tmux
 ```
 
-# Config-level
+## Config-level
 ```bash
 stow -t ~/.config .config
 ```
