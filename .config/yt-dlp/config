@@ -1,0 +1,11 @@
+# Extract audio only
+-x
+# Output format: MP3
+--audio-format mp3
+# Embed metadata
+--embed-metadata
+--add-metadata
+# Output directory and filename template
+-o ~/Music/%(title)s.%(ext)s
+# Avoid downloading playlists unless specified
+--no-playlist
