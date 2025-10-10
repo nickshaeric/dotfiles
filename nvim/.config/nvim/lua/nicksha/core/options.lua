@@ -11,9 +11,11 @@ opt.background = 'dark'
 opt.showmode = false
 opt.wrap = false
 opt.guicursor = ''
+opt.signcolumn = 'yes'
 
 -- Editing
 opt.tabstop = 4
+opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
@@ -41,3 +43,6 @@ opt.completeopt = { 'menuone', 'noselect' }
 -- Scrolling
 opt.scrolloff = 8
 opt.sidescrolloff = 8
+
+-- Misc.
+opt.mouse = 'a'

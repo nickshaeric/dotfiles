@@ -8,4 +8,3 @@ require('nicksha.core.keymaps')
 require('nicksha.core.options')
 
 -- Plugins
-require('nicksha.plugins.init')
