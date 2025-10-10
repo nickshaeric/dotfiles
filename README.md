@@ -10,8 +10,9 @@ cd ~/dotfiles
 
 ## Home-level configs
 ```bash
-stow zsh
 stow tmux
+stow vim
+stow zsh
 ```
 
 ## Config-level

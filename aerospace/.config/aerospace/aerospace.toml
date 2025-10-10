@@ -49,6 +49,10 @@ preset = 'qwerty'
     alt-shift-9 = 'move-node-to-workspace 9'
     alt-shift-0 = 'move-node-to-workspace 10'
 
+    # Workspaces
+    alt-a = 'workspace 1'   # Alacritty
+    alt-s = 'workspace 10'  # Spotify
+
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
 run = 'move-node-to-workspace 1' 
@@ -56,3 +60,7 @@ run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = 'move-node-to-workspace 10'

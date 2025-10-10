@@ -5,6 +5,7 @@ alias vi="nvim"
 alias skim="open -a Skim"
 alias ls="ls -C -t -U -A -p --color=auto"
 alias src="source ~/dotfiles/zsh/.zshrc"
+alias zath='zathura'
 
 # Load colors for prompt
 autoload -U colors && colors
