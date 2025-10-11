@@ -17,6 +17,10 @@ stow zsh
 
 ## Config-level
 ```bash
-stow -t ~/.config .config
+stow aerospace
+stow alacritty
+stow nvim
+stow yt-dlp
+stow zathura
 ```
 
