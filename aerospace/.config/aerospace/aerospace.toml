@@ -51,6 +51,7 @@ preset = 'qwerty'
 
     # Workspaces
     alt-a = 'workspace 1'   # Alacritty
+    alt-f = 'workspace 9'   # Finder
     alt-s = 'workspace 10'  # Spotify
 
 [[on-window-detected]]
@@ -60,6 +61,10 @@ run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'

@@ -3,7 +3,7 @@
 alias vim=nvim
 alias vi="nvim"
 alias skim="open -a Skim"
-alias ls="ls -A -C -G -l -p -t"
+alias ls="ls -A -C -G -p"
 alias src="source ~/dotfiles/zsh/.zshrc"
 alias zath='zathura'
 
