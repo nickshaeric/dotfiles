@@ -50,12 +50,13 @@ preset = 'qwerty'
     alt-shift-0 = 'move-node-to-workspace 10'
 
     # Workspaces
-    alt-a = 'workspace 1'   # Alacritty
+    alt-a = 'workspace 1'   # Ghostty
+    alt-b = 'workspace 2'   # Firefox
     alt-f = 'workspace 9'   # Finder
     alt-s = 'workspace 10'  # Spotify
 
 [[on-window-detected]]
-if.app-id = 'org.alacritty'
+if.app-id = 'com.mitchellh.ghostty'
 run = 'move-node-to-workspace 1' 
 
 [[on-window-detected]]

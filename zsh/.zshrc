@@ -7,6 +7,9 @@ alias ls="ls -A -C -G -p"
 alias src="source ~/dotfiles/zsh/.zshrc"
 alias zath='zathura'
 
+# .zprofile
+[[ -f ~/.zprofile ]] && source ~/.zprofile
+
 # Load colors for prompt
 autoload -U colors && colors
 
