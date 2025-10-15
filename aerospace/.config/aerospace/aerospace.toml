@@ -52,8 +52,11 @@ preset = 'qwerty'
     # Workspaces
     alt-a = 'workspace 1'   # Ghostty
     alt-b = 'workspace 2'   # Firefox
+    alt-w = 'workspace 3'   # Workspace
+    alt-n = 'workspace 8'   # Notion
     alt-f = 'workspace 9'   # Finder
     alt-s = 'workspace 10'  # Spotify
+    alt-tab = 'workspace-back-and-forth'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
@@ -62,6 +65,14 @@ run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace 2'
+
+[[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace-3'
+
+[on-window-detected]]
+if.app-id = 'notion.id'
+run = 'move-node-to-workspace-8'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
