@@ -45,14 +45,20 @@ brew "node"
 brew "openjdk"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Software environment for statistical computing
 brew "r"
 # Ruby version manager
 brew "rbenv"
+# SVG rendering tool and library
+brew "resvg"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Free software distribution for the TeX typesetting system
@@ -69,8 +75,12 @@ brew "typescript"
 brew "typst"
 # Internet file retriever
 brew "wget"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh

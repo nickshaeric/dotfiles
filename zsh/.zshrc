@@ -27,6 +27,10 @@ zmodload zsh/complist
 setopt PROMPT_SUBST  # allow variables to expand in PS1
 PS1="%{$fg[magenta]%}%~%{$reset_color%} \$ "
 
+# Config
+export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
+
 # Scripts
 export PATH="$HOME/.local/scripts:$PATH"
 
@@ -58,6 +62,15 @@ compinit
 
 # Bob (Neovim version manager)
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+
+# Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 # zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
