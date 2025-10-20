@@ -12,6 +12,7 @@ opt.showmode = false
 opt.wrap = false
 opt.guicursor = ""
 opt.signcolumn = "yes"
+opt.colorcolumn = "80"
 
 -- Editing
 opt.tabstop = 4
