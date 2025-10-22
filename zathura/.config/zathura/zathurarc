@@ -1,5 +1,5 @@
 # ~/.config/zathura/zathurarc
-
+set plugin-path "/opt/homebrew/lib/zathura"
 # --- General behavior ---
 # Open PDFs in best-fit mode (fit width/height)
 set adjust-open best-fit
