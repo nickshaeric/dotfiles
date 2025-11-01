@@ -50,7 +50,7 @@ preset = 'qwerty'
     alt-shift-0 = 'move-node-to-workspace 10'
 
     # Workspaces
-    alt-a = 'workspace 1'   # Ghostty
+    alt-a = 'workspace 1'   # Ghostt:
     alt-b = 'workspace 2'   # Firefox
     alt-w = 'workspace 3'   # Workspace
     alt-c = 'workspace 4'   # VSCode
@@ -58,6 +58,18 @@ preset = 'qwerty'
     alt-n = 'workspace 8'   # Notion
     alt-f = 'workspace 9'   # Finder
     alt-s = 'workspace 10'  # Spotify
+
+    [workspace-to-monitor-force-assignment]
+    1 = 'main'
+    2 = 'main'
+    3 = 'main'
+    4 = 'main'
+    5 = 'main'
+    6 = ['secondary', 'main']
+    7 = ['secondary', 'main']
+    8 = ['secondary', 'main']
+    9 = ['secondary', 'main']
+    0 = ['secondary', 'main']
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'

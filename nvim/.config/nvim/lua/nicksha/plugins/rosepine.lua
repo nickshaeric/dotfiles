@@ -16,8 +16,6 @@ return {
             },
             highlight_groups = {
                 Normal = { bg = "none" },
-                Pmenu = { bg = "none", fg = "#e0def4" },   -- Popup menu base
-                PmenuSel = { bg = "#4a465d", fg = "#f8f5f2" },  -- Selected menu item
             },
             enable = {
                 terminal = false,
