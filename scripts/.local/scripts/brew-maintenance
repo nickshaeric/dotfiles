@@ -1,0 +1,47 @@
+#!/bin/zsh
+
+# Script to run Homebrew maintenance commands sequentially
+
+echo "Starting Homebrew maintenance..."
+
+# Update Homebrew
+echo "Running brew update..."
+brew update
+if [ $? -eq 0 ]; then
+    echo "brew update completed successfully."
+else
+    echo "Error during brew update. Exiting."
+    exit 1
+fi
+
+# Upgrade packages
+echo "Running brew upgrade..."
+brew upgrade
+if [ $? -eq 0 ]; then
+    echo "brew upgrade completed successfully."
+else
+    echo "Error during brew upgrade. Exiting."
+    exit 1
+fi
+
+# Clean up old versions
+echo "Running brew cleanup..."
+brew cleanup
+if [ $? -eq 0 ]; then
+    echo "brew cleanup completed successfully."
+else
+    echo "Error during brew cleanup. Exiting."
+    exit 1
+fi
+
+# Remove unused dependencies
+echo "Running brew autoremove..."
+brew autoremove
+if [ $? -eq 0 ]; then
+    echo "brew autoremove completed successfully."
+else
+    echo "Error during brew autoremove. Exiting."
+    exit 1
+fi
+
+echo "Homebrew maintenance completed!"

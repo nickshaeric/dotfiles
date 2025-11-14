@@ -1,0 +1,23 @@
+.titlebar-buttonbox-container {
+    display: none !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+    width: 3px !important;   /* adjust value until it looks natural */
+    min-width: 3px !important;
+}
+
+.tab-close-button {
+    display: none !important;
+}
+
+#context-navigation,
+#context-sep-navigation {
+  display: none !important;
+}
+
+#forward-button,
+#back-button, {
+  display: none !important;
+}
+

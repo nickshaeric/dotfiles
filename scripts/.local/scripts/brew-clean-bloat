@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# brew-clean-bloat.sh
+# Safely check and uninstall likely bloat formulas that aren't required by anything else
+
+bloat_list=()
+
+for formula in "${bloat_list[@]}"; do
+  if brew list --formula | grep -q "^${formula}\$"; then
+    deps=$(brew uses --installed "$formula")
+    if [ -z "$deps" ]; then
+      echo "Uninstalling $formula (no installed packages depend on it)..."
+      brew uninstall --zap "$formula"
+    else
+      echo "Keeping $formula (required by: $deps)"
+    fi
+  else
+    echo "Skipping $formula (not installed)"
+  fi
+done
+
