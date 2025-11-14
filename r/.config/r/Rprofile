@@ -1,0 +1,7 @@
+# Redirect history for both R + RStudio
+Sys.setenv(R_HISTFILE = "~/.config/r/.Rhistory")
+
+# Restore workspace from .config if it exists
+if (file.exists("~/.config/r/.RData")) {
+    load("~/.config/r/.RData")
+}

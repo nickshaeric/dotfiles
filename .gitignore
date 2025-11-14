@@ -1,0 +1,44 @@
+# --------------------------------------------------------------------
+# DOTFILES REPO - LOCAL IGNORE RULES
+# --------------------------------------------------------------------
+# Only ignore files that appear inside dotfiles *as a result of apps*
+# We DO NOT repeat OS-wide ignores here (like .DS_Store, Thumbs.db)
+# because those are handled globally in ~/.gitignore
+# --------------------------------------------------------------------
+
+# ------------------------------
+# R / RStudio generated files
+# ------------------------------
+# Never track R workspace or history (binary/user data)
+.config/r/.RData
+.config/r/.Rhistory
+.config/r/.Rapp.history
+
+# RStudio ephemeral user settings
+.Rproj.user/
+*.Rproj
+
+# ------------------------------
+# Neovim / Editors
+# ------------------------------
+# Swap files, backup files, session files
+*.swp
+*.swo
+*.bak
+
+# ------------------------------
+# NodeJS / package managers
+# (in case you store npm configs in dotfiles)
+# ------------------------------
+package-lock.json
+npm-debug.log
+
+# ------------------------------
+# Python environment files inside dotfiles
+# ------------------------------
+__pycache__/
+
+# ------------------------------
+# Secrets (just in case)
+# ------------------------------
+*.env
