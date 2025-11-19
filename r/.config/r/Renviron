@@ -1,0 +1,2 @@
+R_DATAFILE="~/.config/r/.RData"
+R_HISTFILE="~/.config/r/.Rhistory"
