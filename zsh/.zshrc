@@ -33,6 +33,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
+# doomemacs
+export PATH="$HOME/.config/emacs/bin:$PATH"
+
 # scripts
 export PATH="$HOME/.local/scripts:$PATH"
 
